@@ -14,7 +14,6 @@ const Navbar: React.FC = () => (
 
     <span className="text-gray-900 font-semibold">Spreadsheet 3</span>
 
-    {/* "..." shape image */}
     <img
       src={shape}
       alt="More options"
