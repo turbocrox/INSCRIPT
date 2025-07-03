@@ -1,13 +1,14 @@
  @import "tailwindcss";
- /* app.css */
 @import "@fontsource/inter/variable.css";
 
-@import "@fontsource/poppins";
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+
+@theme {
+  --font-sanchez: 'Sanchez', serif;
+}
+
 
  @theme {
   --font-inter: "InterVariable", sans-serif;
-}
-
-@theme {
-  --font-poppins: "Poppins", sans-serif;
 }
