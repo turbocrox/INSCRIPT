@@ -69,6 +69,7 @@ const Navbar1: React.FC = () => {
           alt="New Action"
           className="h-[36px] w-[150px] object-contain pr-3"
           onClick={() => console.log("New action clicked")}
+          
         />
       </div>
     </nav>
