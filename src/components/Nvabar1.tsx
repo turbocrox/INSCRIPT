@@ -3,71 +3,73 @@ import React from "react";
 const Navbar1: React.FC = () => {
   return (
     <nav
-      className="relative flex items-center  w-[1440px] h-[48px] px-2
-                 border-b border-gray-200 bg-white text-sm"
+      className="flex items-center w-full h-[48px] gap-2
+                 pt-[6px] pb-[6px] pl-[10px] pr-0
+                 border-b border-gray-200 bg-white text-sm opacity-100 "
     >
-      <div className="flex items-center gap-2">
-        <img
-          src="/Toolbar.png"
-          alt="Inscript Logo"
-          className="h-[36px] w-[91px]"
-          onClick={() => console.log(" Toolbar clicked")}
-        />
-        <img
-          src="/line.png"
-          alt="divider"
-          className="h-[24px] w-[1px] object-contain"
-          
-        />
-        <img
+      {/* Left group */}
+      <img
+        src="/Toolbar.png"
+        alt="Toolbar"
+        className="h-[36px] w-[91px]"
+        onClick={() => console.log("Toolbar clicked")}
+      />
+      <img
+        src="/line.png"
+        alt="Divider"
+        className="h-[24px] w-px object-contain"
+      />
+      <img
         src="/hide.png"
-        alt="hide"
+        alt="Hide"
         className="h-[36px] w-[118px] object-contain"
-         onClick={() => console.log(" hide field clicked")}
-        />
-        <img
+        onClick={() => console.log("Hide clicked")}
+      />
+      <img
         src="/Sort.png"
-        alt="sort"
+        alt="Sort"
         className="h-[36px] w-[73px] object-contain"
-         onClick={() => console.log(" sort  clicked")}
-        />
-        <img
+        onClick={() => console.log("Sort clicked")}
+      />
+      <img
         src="/Filter.png"
         alt="Filter"
         className="h-[36px] w-[80px] object-contain"
-         onClick={() => console.log(" filter is  clicked")}
-        />
-        <img
+        onClick={() => console.log("Filter clicked")}
+      />
+      <img
         src="/Cellview.png"
         alt="CellView"
         className="h-[36px] w-[105px] object-contain"
-         onClick={() => console.log(" Cellview is clicked")}
-        />
+        onClick={() => console.log("Cellview clicked")}
+      />
+
+      {/* Right group, pushed over with ml-auto */}
+      <div className="flex items-center gap-2 ml-auto">
         <img
           src="/Import.png"
-          alt="import"
-          className="h-[36px] w-[90px] object-contain ml-[450px]"
-          onClick={() => console.log("import  options clicked")}
+          alt="Import"
+          className="h-[36px] w-[90px] object-contain"
+          onClick={() => console.log("Import clicked")}
         />
         <img
           src="/Export.png"
-          alt="export"
+          alt="Export"
           className="h-[36px] w-[89px] object-contain"
-          onClick={() => console.log("export options clicked")}
+          onClick={() => console.log("Export clicked")}
         />
         <img
-            src="/Share.png" 
-            alt="Share"
-            className="h-[36px] w-[89px] object-contain"
-            onClick={() => console.log(" share clicked")}
+          src="/Share.png"
+          alt="Share"
+          className="h-[36px] w-[89px] object-contain"
+          onClick={() => console.log("Share clicked")}
         />
-         <img
-            src="/Newaction.png" 
-            alt="Share"
-            className="h-[36px] w-[150px] object-contain"
-            onClick={() => console.log(" New action  is clicked")}
+        <img
+          src="/Newaction.png"
+          alt="New Action"
+          className="h-[36px] w-[150px] object-contain pr-3"
+          onClick={() => console.log("New action clicked")}
         />
-   
       </div>
     </nav>
   );
